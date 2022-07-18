@@ -56,10 +56,11 @@
 		D4C73EE92885E0A900C25976 /* BMICalculator */ = {
 			isa = PBXGroup;
 			children = (
-				D4C73F012885E15E00C25976 /* App */,
 				D4C73EFE2885E13600C25976 /* ViewControllers */,
+				D4C73F022885E1E700C25976 /* Models */,
 				D4C73EFF2885E14800C25976 /* Storyboards */,
 				D4C73F002885E14F00C25976 /* Resources */,
+				D4C73F012885E15E00C25976 /* App */,
 			);
 			path = BMICalculator;
 			sourceTree = "<group>";
@@ -97,6 +98,13 @@
 				D4C73EF82885E0AA00C25976 /* Info.plist */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		D4C73F022885E1E700C25976 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VWJHPQLGW8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BMICalculator/Info.plist;
+				INFOPLIST_FILE = BMICalculator/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -350,7 +358,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VWJHPQLGW8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BMICalculator/Info.plist;
+				INFOPLIST_FILE = BMICalculator/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
