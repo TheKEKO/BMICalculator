@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="139" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="RXZ-QX-0nE">
             <objects>
-                <viewController id="CI7-wS-QxN" sceneMemberID="viewController">
+                <viewController id="CI7-wS-QxN" customClass="ResultViewController" customModule="BMICalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y2Z-AK-hUp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,6 +193,10 @@
                             <constraint firstItem="tNE-8Z-Bmz" firstAttribute="bottom" secondItem="UT7-mL-XTq" secondAttribute="bottom" id="eSg-7T-Lsb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adviceLabel" destination="EcR-OG-NXs" id="9Ow-2p-Ft3"/>
+                        <outlet property="bmiLabel" destination="QHD-Ep-HJj" id="FTK-gN-u4N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3e-IU-ynT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
