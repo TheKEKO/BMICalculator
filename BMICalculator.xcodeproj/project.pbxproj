@@ -110,8 +110,8 @@
 		D4C73F022885E1E700C25976 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D4492EBF288741A8004DD9C7 /* CalculatorBrain.swift */,
 				D4492EC1288741D6004DD9C7 /* BMI.swift */,
+				D4492EBF288741A8004DD9C7 /* CalculatorBrain.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
