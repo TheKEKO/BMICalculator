@@ -10,6 +10,7 @@
         <!--Calculate View Controller-->
         <scene sceneID="zSR-zd-GKM">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Aw-Oq-9BR" sceneMemberID="firstResponder"/>
                 <viewController id="PCN-9N-YGZ" customClass="CalculateViewController" customModule="BMICalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ead-3v-L74">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -54,6 +55,9 @@
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.51797945209999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <color key="thumbTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.49510380990000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="heightSliderChanged:" destination="PCN-9N-YGZ" eventType="valueChanged" id="kWj-Yi-27y"/>
+                                        </connections>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="fe5-4P-7df">
                                         <rect key="frame" x="0.0" y="666" width="374" height="21"/>
@@ -82,6 +86,9 @@
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.49890303940000003" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <color key="thumbTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.50481592470000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="weightSliderChanged:" destination="PCN-9N-YGZ" eventType="valueChanged" id="d1L-Eo-mJx"/>
+                                        </connections>
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOH-Nf-544">
                                         <rect key="frame" x="0.0" y="767" width="374" height="51"/>
@@ -99,6 +106,9 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calculatePressed:" destination="PCN-9N-YGZ" eventType="touchUpInside" id="7wj-ff-Eoq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -121,9 +131,9 @@
                         <outlet property="heightSlider" destination="HYT-db-MeZ" id="gC8-en-4TV"/>
                         <outlet property="weightLabel" destination="rjp-LA-tFV" id="Dym-fb-x4u"/>
                         <outlet property="weightSlider" destination="WTj-RG-K90" id="zwU-XF-Sfr"/>
+                        <segue destination="CI7-wS-QxN" kind="presentation" identifier="goToResult" modalPresentationStyle="fullScreen" id="gCr-27-QX9"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Aw-Oq-9BR" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="138"/>
         </scene>
