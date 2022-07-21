@@ -1,2 +1,2 @@
 ## Final Application BMI Calculator
-Application BMI Calculator using UIKit
+The Body Mass Index (BMI) Calculator App can be used to calculate BMI
